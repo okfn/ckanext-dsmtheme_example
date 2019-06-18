@@ -1,1 +1,7 @@
 {% ckan_extends %}
+
+{% block page_primary_action %}
+  {% if h.check_access('package_create') %}
+    Hey
+  {% endif %}
+{% endblock %}
